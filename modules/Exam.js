@@ -1,4 +1,5 @@
 import { examQuestions } from "./DataBase.js";
+import { createProgressBar } from "./ProgressBar.js";
 import { startTimer } from "./TimerBar.js";
 import { shuffleArray } from "./utils.js";
 
@@ -78,5 +79,6 @@ export function endExam() {
   clearInterval(timerInterval);
   examPage.classList.add("hidden");
   resultPage.classList.remove("hidden");
+  createProgressBar(score);
   resultMessage.textContent = `You scored ${score} out of ${examQuestions.length}`;
 }
