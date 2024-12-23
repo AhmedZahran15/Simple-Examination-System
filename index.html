@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Examination System</title>
+    <link rel="icon" href="./images/favIcon.png" sizes="any" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CO+Guides&family=Playwrite+MX+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./progressbar.min.js"></script>
+    <script defer type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="home-page">
+        <h1>Simple Examination System</h1>
+        <button id="show-modal">Start Exam</button>
+      </div>
+      <div class="hidden exam-page">
+        <div class="header">
+          <h3 class="name"><span>Name: </span></h3>
+          <div id="timer-bar" class="timer">
+            <div class="timer-bar"></div>
+            <div class="time-left"></div>
+          </div>
+        </div>
+        <div id="question-container">
+          <h2 id="question-title"></h2>
+          <img id="question-image" alt="Question Image" />
+          <div id="answers"></div>
+          <button id="next-button" disabled>Next</button>
+        </div>
+      </div>
+      <div class="hidden result-page">
+        <h1>Exam Result</h1>
+        <p id="result-message"></p>
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </body>
+</html>
