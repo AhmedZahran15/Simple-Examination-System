@@ -56,6 +56,11 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.swal2-confirm:disabled {
+  background-color: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed;
+}
 /* Timer Bar */
 .timer {
   position: relative;
