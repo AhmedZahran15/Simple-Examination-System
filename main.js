@@ -9,6 +9,16 @@ startExamButton.addEventListener("click", () => {
     showCancelButton: false,
     confirmButtonText: "Confirm",
     confirmButtonColor: "#007bff",
+    didOpen: () => {
+      const input = Swal.getInput();
+      const confirmButton = Swal.getConfirmButton();
+      confirmButton.disabled = true;
+      confirmButton.classList.toggle("disabled");
+      input.addEventListener("input", () => {
+        confirmButton.disabled = !input.value;
+        confirmButton.classList.toggle("disabled");
+      });
+    },
     inputValidator: (value) => {
       if (!value) return "You need to enter your name!";
       else if (/[^a-zA-Z\s]/.test(value))
