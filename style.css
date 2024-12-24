@@ -72,7 +72,12 @@ button:disabled {
 }
 
 .timer-bar {
-  background-color: #007bff;
+  background-image: linear-gradient(
+    to right,
+    #4aa1f3 0%,
+    #007bff 50%,
+    #0056b3 100%
+  );
   height: 100%;
   width: 100%;
   transition: width 1s linear;
