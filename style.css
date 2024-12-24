@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100dvh;
   overflow: hidden;
-  background-color: #f7f7f7;
+  background-color: lightblue;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   width: 80%;
   max-width: 600px;
   max-height: 610px;
-  background: #fff;
+  background: rgb(217, 235, 241);
   padding: 20px;
   overflow: hidden;
   border-radius: 10px;
@@ -128,18 +128,18 @@ button:disabled {
   font-size: 16px;
   background-color: #f7f7f7;
   color: #333;
-  border: 1px solid #ccc;
+  border: 1px solid #82c3f1;
   text-align: left;
   padding: 10px;
   transition: background-color 0.3s;
 }
 
 #answers button:hover {
-  background-color: #e0e0e0;
+  background-color: #bceaff;
 }
 
 #answers button.selected {
-  background-color: #d3d3d3;
+  background-color: #44a7ed;
 }
 
 /* Result Page */
@@ -152,7 +152,7 @@ button:disabled {
   justify-self: center;
   width: 250px;
   height: 250px;
-  background-color: #f0f0f0;
+  background-color: #ebebeb;
   border-radius: 5px;
   margin: 10px 0;
   padding: 20px;
