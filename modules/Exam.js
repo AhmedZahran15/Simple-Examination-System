@@ -12,6 +12,7 @@ const answersContainer = document.querySelector("#answers");
 const nextButton = document.querySelector("#next-button");
 const resultMessage = document.querySelector("#result-message");
 const questionNumber = document.querySelector(".question-number");
+
 let currentQuestionIndex = 0;
 let score = 0;
 let timerInterval;
