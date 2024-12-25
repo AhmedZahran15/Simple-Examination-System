@@ -11,7 +11,7 @@ const questionImage = document.querySelector("#question-image");
 const answersContainer = document.querySelector("#answers");
 const nextButton = document.querySelector("#next-button");
 const resultMessage = document.querySelector("#result-message");
-
+const questionNumber = document.querySelector(".question-number");
 let currentQuestionIndex = 0;
 let score = 0;
 let timerInterval;
@@ -33,6 +33,9 @@ function loadQuestion() {
   questionTitle.innerText = currentQuestion.title;
   questionImage.src = currentQuestion.image;
   answersContainer.innerHTML = "";
+  questionNumber.textContent = `Question ${currentQuestionIndex + 1}/${
+    examQuestions.length
+  }`;
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerText = answer;
