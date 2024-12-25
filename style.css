@@ -94,11 +94,16 @@ button:disabled {
 }
 
 /* Question Container */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .name {
   text-align: left;
   font-size: 18px;
   font-weight: 600;
-  margin: 10px 0;
 }
 .name > span {
   font-weight: 400;
