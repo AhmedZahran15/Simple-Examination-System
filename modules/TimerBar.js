@@ -10,7 +10,6 @@ export function startTimer() {
     timerBar.style.width = `${(--timeLeft / 60) * 100}%`;
     timeElement.innerText = `${timeLeft}`;
     if (timeLeft == 0) {
-      clearInterval(timeLeft);
       endExam();
     }
   }, 1000);
