@@ -84,5 +84,5 @@ export function endExam() {
   examPage.classList.add("hidden");
   resultPage.classList.remove("hidden");
   createProgressBar(score);
-  resultMessage.textContent = `You scored ${score} out of ${examQuestions.length}`;
+  resultMessage.textContent = `You solved ${score} questions correctly out of ${examQuestions.length}`;
 }
